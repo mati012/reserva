@@ -1,17 +1,21 @@
-
-
-import java.time.LocalDateTime;
+package com.reserva.reserva;
 
 public class Disponibilidad {
-    private String idDisponibilidad;
-    private char  activa  ;
-    
+    private String codigoDisponibilidad;
+    private char disponible;
 
+    public Disponibilidad(String codigoDisponibilidad, char disponible){
 
-    public Appointment(String idDisponibilidad, char activa ) {
-        this.idDisponibilidad = idDisponibilidad;
-        this.activa = activa;
+        this.codigoDisponibilidad= codigoDisponibilidad;
+        this.disponible= disponible;
     }
 
-    // Getters y setters
+    public String getCodigoDisponibilidad() {
+        return codigoDisponibilidad;
+    }
+
+    public char getDisponible() {
+        return disponible;
+    }
+    
 }
